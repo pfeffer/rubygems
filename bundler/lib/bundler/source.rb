@@ -49,6 +49,10 @@ module Bundler
       specs.dependency_names
     end
 
+    def spec_names
+      specs.spec_names
+    end
+
     def include?(other)
       other == self
     end

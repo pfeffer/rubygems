@@ -244,6 +244,13 @@ module Bundler
           specs.unmet_dependency_names
         end
 
+        # Used by definition.
+        #
+        # Note: Do not override if you don't know what you are doing.
+        def spec_names
+          specs.spec_names
+        end
+
         # Note: Do not override if you don't know what you are doing.
         def can_lock?(spec)
           spec.source == self
